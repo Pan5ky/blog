@@ -2,6 +2,17 @@
 .navigation{
     list-style: none;
     display: flex;
+    background-color: #212121;
+    height: 100px;
+    
+    .logo{
+        position: relative;
+        top: 30px;
+        left: 30px;
+        width: 512px;
+        height: 512px;
+    }
+
     .navigation-item{
         font-size: 60px;
     }
