@@ -2,13 +2,15 @@
 layout: default
 title: Blogposts
 ---
-<h1>Latest Posts</h1>
 
-<ul>
-  {% for post in site.posts %}
+<div class="post-thumb-container">
+  <ul class="post-thumb">
+    {% for post in site.posts %}
     <li>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <img src="/assets/images/{{ post.image }}" alt="">
       <p>{{ post.excerpt }}</p>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</div>

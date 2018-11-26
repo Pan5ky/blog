@@ -3,16 +3,28 @@
   padding: 0px;
   border: 0px; }
 
-.navigation {
-  list-style: none;
-  display: flex;
-  background-color: #212121;
-  height: 100px; }
-  .navigation .logo {
+.navigation-container .navigation {
+  list-style-type: none;
+  height: 62px;
+  background-color: #212121; }
+  .navigation-container .navigation .logo {
     position: relative;
-    top: 30px;
-    left: 30px;
-    width: 512px;
-    height: 512px; }
-  .navigation .navigation-item {
-    font-size: 60px; }
+    top: 0px;
+    left: 10px;
+    width: 120px;
+    height: 120px; }
+  .navigation-container .navigation .navigation-item {
+    font-size: 36px;
+    float: right;
+    margin: 10px; }
+    .navigation-container .navigation .navigation-item a {
+      font-family: 'Chakra Petch', sans-serif;
+      text-decoration: none;
+      display: block;
+      color: crimson; }
+
+.post-thumb-container {
+  display: inline-block; }
+  .post-thumb-container .post-thumb {
+    width: 302px;
+    height: 402px; }

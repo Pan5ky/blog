@@ -1,19 +1,29 @@
+.navigation-container{
 
-.navigation{
-    list-style: none;
-    display: flex;
-    background-color: #212121;
-    height: 100px;
-    
-    .logo{
-        position: relative;
-        top: 30px;
-        left: 30px;
-        width: 512px;
-        height: 512px;
-    }
+    .navigation{
+        list-style-type: none;
+        height: 62px;
+        background-color: #212121;
 
-    .navigation-item{
-        font-size: 60px;
+        .logo{
+            position: relative;
+            top: 0px;
+            left: 10px;
+            width: 120px;
+            height: 120px;
+        }
+        
+        .navigation-item{
+            font-size: 36px;
+            float: right;
+            margin: 10px;
+            a{
+                font-family: 'Chakra Petch', sans-serif;
+                text-decoration: none;
+                display: block;
+                color: crimson;
+            }
+        }
     }
 }
+

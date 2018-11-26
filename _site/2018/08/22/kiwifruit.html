@@ -5,35 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kiwifruit</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-    <nav>
+    <nav class="navigation-container">
+    <!--Workaround for ugly relative path handling-->
+<!--https://ricostacruz.com/til/relative-paths-in-jekyll-->
+
+
+
+
     <ul class="navigation">
-        <!--<img class="logo" src="../assets/images/logo.png" alt="">-->
+        <img class="logo" src="../../../assets/images/logo.png" alt="">
         
-            <li class="navigation-item">
-                <a href="/home">
-                    Home
-                </a>
-            </li>
+        <li class="navigation-item">
+            <a href="/home">
+                Home
+            </a>
+        </li>
         
-            <li class="navigation-item">
-                <a href="/about.html">
-                    About
-                </a>
-            </li>
+        <li class="navigation-item">
+            <a href="/blog.html">
+                Blog
+            </a>
+        </li>
         
-            <li class="navigation-item">
-                <a href="/blog.html">
-                    Blog
-                </a>
-            </li>
-            
+        <li class="navigation-item">
+            <a href="/about.html">
+                About
+            </a>
+        </li>
+        
     </ul>
 </nav>
+    <div class="post">
     <h1>Kiwifruit</h1>
-<p>22 Aug 2018  - Eugen Meissner</p>
+    <p>22 Aug 2018 - Eugen Meissner</p>
+</div>
+
 
 <p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
 berry of several species of woody vines in the genus Actinidia.</p>
