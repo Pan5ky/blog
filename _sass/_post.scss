@@ -1,10 +1,18 @@
-.post-thumb-container{
-    display: inline-block;
-    .post-thumb{
-        width: 302px;
-        height: 402px;
+    .post-thumb-container{
+        display: flex;
+        list-style: none;
+
+        .post-thumb{
+            width: 302;
+            height:402;
+            margin: 2px;
+
+            a{
+                text-decoration: none;
+            }
+        }
     }
-}
+
 
 .post{
 
