@@ -1,12 +1,8 @@
     .post-thumb-container{
-        display: flex;
         list-style: none;
-
         .post-thumb{
-            width: 302;
-            height:402;
-            margin: 2px;
-
+            margin: 1px;
+            background-color: crimson;
             a{
                 text-decoration: none;
             }

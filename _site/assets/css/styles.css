@@ -24,11 +24,9 @@
       color: crimson; }
 
 .post-thumb-container {
-  display: flex;
   list-style: none; }
   .post-thumb-container .post-thumb {
-    width: 302;
-    height: 402;
-    margin: 2px; }
+    margin: 1px;
+    background-color: crimson; }
     .post-thumb-container .post-thumb a {
       text-decoration: none; }
