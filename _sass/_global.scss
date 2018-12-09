@@ -1,0 +1,9 @@
+body{
+    background-color: #081421;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 5% 95%;
+}

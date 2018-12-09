@@ -1,15 +1,20 @@
     .post-thumb-container{
+        grid-column: 2;
+        grid-row: 2;
         list-style: none;
+        margin: auto;
         .post-thumb{
             margin: 1px;
-            background-color: crimson;
             a{
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
                 text-decoration: none;
             }
         }
     }
 
 
-.post{
-
+.posts{
+    grid-row: 2;
+    grid-column: 2;
 }

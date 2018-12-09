@@ -3,30 +3,66 @@
   padding: 0px;
   border: 0px; }
 
+.post-thumb-container {
+  grid-column: 2;
+  grid-row: 2;
+  list-style: none;
+  margin: auto; }
+  .post-thumb-container .post-thumb {
+    margin: 1px; }
+    .post-thumb-container .post-thumb a {
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+      text-decoration: none; }
+
+.posts {
+  grid-row: 2;
+  grid-column: 2; }
+
+body {
+  background-color: #081421; }
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 5% 95%; }
+
+.header-container {
+  grid-column: 1;
+  grid-row: 1;
+  order: 0; }
+  .header-container .logo {
+    float: right;
+    background-color: yellow;
+    width: fit-content;
+    height: auto;
+    border-radius: 5px;
+    padding: 0px 10px 0px 10px; }
+    .header-container .logo p {
+      color: black;
+      font-size: 70px;
+      font-family: 'Pacifico', cursive; }
+
 .navigation-container .navigation {
   list-style-type: none;
   height: 62px;
-  background-color: #212121; }
-  .navigation-container .navigation .logo {
-    position: relative;
-    top: 0px;
-    left: 10px;
-    width: 120px;
-    height: 120px; }
+  justify-content: center; }
   .navigation-container .navigation .navigation-item {
-    font-size: 36px;
-    float: right;
+    font-size: 26px;
     margin: 10px; }
     .navigation-container .navigation .navigation-item a {
-      font-family: 'Chakra Petch', sans-serif;
+      font-family: 'Courier new', sans-serif;
       text-decoration: none;
+      text-align: right;
       display: block;
-      color: crimson; }
+      color: white; }
 
-.post-thumb-container {
-  list-style: none; }
-  .post-thumb-container .post-thumb {
-    margin: 1px;
-    background-color: crimson; }
-    .post-thumb-container .post-thumb a {
-      text-decoration: none; }
+.stuff {
+  background-color: crimson; }
+
+.side-bar {
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 50px; }

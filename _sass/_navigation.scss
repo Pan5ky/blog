@@ -1,29 +1,22 @@
 .navigation-container{
-
     .navigation{
         list-style-type: none;
         height: 62px;
-        background-color: #212121;
-
-        .logo{
-            position: relative;
-            top: 0px;
-            left: 10px;
-            width: 120px;
-            height: 120px;
-        }
-        
+        justify-content: center;
         .navigation-item{
-            font-size: 36px;
-            float: right;
+            font-size: 26px;
             margin: 10px;
             a{
-                font-family: 'Chakra Petch', sans-serif;
+                font-family: 'Courier new', sans-serif;
                 text-decoration: none;
+                text-align: right;
                 display: block;
-                color: crimson;
+                color: white;
             }
         }
     }
 }
 
+.stuff{
+    background-color: crimson;
+}

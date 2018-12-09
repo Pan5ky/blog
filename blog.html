@@ -2,15 +2,18 @@
 layout: default
 title: Blogposts
 ---
-<div>
-    <script type="text/javascript" src="/assets/js/thumbs.js"></script>
+
+<div class="stuff">
+    Hello WOrld
+</div>
+<div class="posts">
   <ul class="post-thumb-container">
     {% for post in site.posts %}
     <li class="post-thumb">
       <a href="{{ post.url }}">
         <h2>{{ post.title }}</h2>
           <img src="/assets/images/{{ post.image }}" alt="">
-        <!--<p>{{ post.excerpt }}</p>-->
+        <p>{{ post.excerpt }}</p>
       </a>
     </li>
     {% endfor %}

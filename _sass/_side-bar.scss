@@ -1,0 +1,11 @@
+@import 
+    'header',
+    'navigation';
+
+.side-bar{
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
+}
