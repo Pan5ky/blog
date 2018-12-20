@@ -1,18 +1,16 @@
-.header-container{
-    grid-column: 1;
-    grid-row: 1;
-    order: 0;
-    .logo{
-        float: right;
+    .logo {
+        margin: 0 0 0 auto;
+        grid-column: 1;
+        grid-row: 1;
         background-color: yellow;
         width: fit-content;
-        height: auto;
+        height: fit-content;
         border-radius: 5px;
         padding: 0px 10px 0px 10px;
-        p{
+
+        p {
             color: black;
             font-size: 70px;
             font-family: 'Pacifico', cursive;
         }
     }
-}

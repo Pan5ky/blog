@@ -1,4 +1,6 @@
 .navigation-container{
+    grid-row: 2;
+    grid-column: 1;
     .navigation{
         list-style-type: none;
         height: 62px;
@@ -15,8 +17,4 @@
             }
         }
     }
-}
-
-.stuff{
-    background-color: crimson;
 }
