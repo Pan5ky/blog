@@ -9,16 +9,19 @@
     }
 }
 
-.post-thumb-container{
+.post-container{
     grid-column: 2;
     grid-row: 2;
+    width: 880px;
     flex-flow: row wrap;
     display: flex;
     list-style: none;
     flex-direction: row;
-    .post-thumb{
+
+    .post{
         margin: 20px;
         width: 400px;
+        font-family: 'Source Sans Pro', sans-serif;
         
         .date-author {
             color: gray;
@@ -28,7 +31,16 @@
             margin: 0px 0px 10px 0px;
         }
 
+        .short-descr {
+            color: white;
+        }
+
+        .read-more {
+            margin: 5px 0px 0px;
+        }
+
         a{
+            width: inherit;
             color: white;
             font-family: 'Source Sans Pro', sans-serif;
             text-decoration: none;
