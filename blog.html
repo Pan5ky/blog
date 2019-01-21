@@ -4,12 +4,13 @@ title: Blogposts
 ---
 
 <div class="posts">
+  <p class="posts-heading">What's new?</p>
   <ul class="post-thumb-container">
     {% for post in site.posts %}
     <li class="post-thumb">
       <a href="{{ post.url }}">
-        <h2>{{ post.title }}</h2>
-          <img src="/assets/images/{{ post.image }}" alt="">
+        <p class="date-author">{{ post.date | date: '%B %d, %Y' }} by {{ post.author }}</p>
+        <h2 class="post-title">{{ post.title }} </h2>
         <p>{{ post.excerpt }}</p>
       </a>
     </li>
