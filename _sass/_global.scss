@@ -2,8 +2,9 @@ body{
     background-color: #081421;
 }
 
+
 .container{
     display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 120px 90%;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 120px 90% 20%;
 }

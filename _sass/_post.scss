@@ -1,28 +1,40 @@
-.posts{
+.posts {
     grid-row: 2;
     grid-column: 2;
-    .posts-heading{
+
+    .posts-heading {
         color: white;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 34px;
         margin: 0px 0px 0px 20px;
     }
+
+    .other-articles {
+        margin: 0px 20px;
+        .other-link {
+            color: white;
+            font-size: 26px;
+            text-decoration-color: yellow;
+            font-family: 'Pacifico', cursive;
+        }
+    }
 }
 
-.post-container{
+.post-container {
     grid-column: 2;
     grid-row: 2;
-    width: 880px;
+    width: fit-content;
     flex-flow: row wrap;
     display: flex;
     list-style: none;
     flex-direction: row;
+    min-width: 1100px;
 
-    .post{
+    .post {
         margin: 20px;
-        width: 400px;
+        width: 490px;
         font-family: 'Source Sans Pro', sans-serif;
-        
+
         .date-author {
             color: gray;
         }
@@ -39,11 +51,39 @@
             margin: 5px 0px 0px;
         }
 
-        a{
+        a {
             width: inherit;
             color: white;
             font-family: 'Source Sans Pro', sans-serif;
             text-decoration: none;
         }
+    }
+}
+
+.full-post {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0px 50px;
+    max-width: 600px;
+    color: white;
+
+    .full-post-title {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 80px;
+        font-weight: 400;
+        letter-spacing: -1px;
+        line-height: 1.1;
+        margin-bottom: 40px;
+    }
+
+    .full-post-date-author {
+        font-family: 'Source Sans Pro', sans-serif;
+        margin-bottom: 10px;
+        color: gray;
+    }
+
+    .full-post-text {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 20px;
     }
 }

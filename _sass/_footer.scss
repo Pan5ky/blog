@@ -1,0 +1,22 @@
+.footer {
+    width: 100%;
+    height: 50px;
+    grid-column: 2;
+    grid-row: 3;
+
+    .footer-description{
+        font-family: 'Pacifico', cursive;
+        text-decoration: underline yellow;
+        color: white;
+        margin: auto;
+        width: 250px;
+        height: fit-content;
+        p{
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 10px 0px;
+            color: white;
+            font-size: 14px;
+        }
+    }
+    
+}

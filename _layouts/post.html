@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
-<div class="post">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+
+
+<div class="full-post">
+    <p class="full-post-date-author">{{ page.date | date_to_string }} <i>by</i> {{ page.author }}</p>
+    <h1 class="full-post-title">{{ page.title }}</h1>
+    <div class="full-post-text">
+        {{ content }}
+    </div>
 </div>
-
-
-{{ content }}
