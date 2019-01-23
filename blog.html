@@ -6,7 +6,7 @@ title: Blogposts
 <div class="posts">
   <p class="posts-heading">What's new?</p>
   <ul class="post-container">
-    {% for post in site.posts limit:6 %}
+    {% for post in site.posts limit:4 %}
     <li class="post">
       <p class="date-author">{{ post.date | date: '%B %d, %Y' }} <i>by</i> {{ post.author }}</p>
 
@@ -25,6 +25,6 @@ title: Blogposts
     {% endfor %}
   </ul>
   <p class="other-articles">
-    <a class="other-link" href="/other.html">More Artiles</a>
+    <a class="other-link" href="/other.html">More Articles</a>
   </p>
 </div>
