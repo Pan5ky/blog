@@ -1,0 +1,40 @@
+.tag-container {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0px 20px;
+
+    .tag-title {
+        color: white;
+        font-size: 46px;
+        font-family: 'Dosis', sans-serif;
+        border-bottom: 5px solid yellow;
+        margin-bottom: 20px;
+    }
+
+    .tag-posts {
+        list-style: none;
+
+        .tag-post-link {
+            text-decoration: none;
+            color: white;
+            font-family: 'Dosis', sans-serif;
+        }
+    }
+}
+
+.small-tag-container {
+    white-space: nowrap;
+    .small-tag {
+        background-color: yellow;
+        display: inline-block;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        .small-tag-link {
+            padding: 0px 10px;
+            color: #081421;
+            text-decoration: none;
+            font-family: 'Dosis', sans-serif;
+            font-weight: bold;
+        }
+    }
+}

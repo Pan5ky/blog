@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="tag-container">
+    <h1 class="tag-title"> Category // {{ page.tag }}</h1>
+    <ul class="tag-posts">
+        {% for post in site.tags[page.tag] %}
+        <li class="tag-post">
+            <a class="tag-post-link" href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+            {{ post.description }}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<hr>
