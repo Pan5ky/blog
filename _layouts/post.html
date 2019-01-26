@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-<div class="full-post">
+<article class="full-post">
     <p class="full-post-date-author">{{ page.date | date_to_string }} <i>by</i> {{ page.author }}</p>
     <h1 class="full-post-title">{{ page.title }}</h1>
     <div class="small-tag-container">
@@ -15,9 +15,14 @@ layout: default
             </a>
         </div>
         {% endfor %}
-        
+
     </div>
     <div class="full-post-text">
         {{ content }}
     </div>
-</div>
+    {% include disqus_comments.html %}
+</article>
+
+
+
+

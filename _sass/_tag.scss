@@ -13,22 +13,49 @@
 
     .tag-posts {
         list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: row;
+        min-width: 1100px;
+        width: fit-content;
 
-        .tag-post-link {
-            text-decoration: none;
-            color: white;
+        .tag-post{
+            margin: 0px 20px 20px 0px;
+            width: 490px;
             font-family: 'Dosis', sans-serif;
+            
+            .tag-post-date {
+                color: gray;
+            }
+    
+            .tag-post-title{
+                margin-bottom: 10px;
+                .tag-post-link {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 24px;
+                }
+            }
+
+            .tag-post-description{
+                color: white;
+                font-size: 20px;
+            }
         }
+
+        
     }
 }
 
 .small-tag-container {
     white-space: nowrap;
+
     .small-tag {
         background-color: yellow;
         display: inline-block;
         margin-bottom: 10px;
         border-radius: 5px;
+        
         .small-tag-link {
             padding: 0px 10px;
             color: #081421;
@@ -38,3 +65,4 @@
         }
     }
 }
+
