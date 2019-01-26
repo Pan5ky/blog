@@ -6,10 +6,14 @@ layout: default
     <ul class="tag-posts">
         {% for post in site.tags[page.tag] %}
         <li class="tag-post">
-            <a class="tag-post-link" href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-            {{ post.description }}
+            <p class="tag-post-date">{{ post.date | date: '%B %d, %Y' }} <i>by</i> {{ post.author }}</p>
+            
+            <h2 class="tag-post-title">
+                <a class="tag-post-link" href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+
+            <p class="tag-post-description">{{ post.description }}</p>
         </li>
         {% endfor %}
     </ul>
 </div>
-<hr>

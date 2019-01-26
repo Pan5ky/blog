@@ -6,17 +6,21 @@
         width: fit-content;
         height: fit-content;
         border-radius: 5px;
-        padding: 0px 10px 0px 10px;
+
+        a {
+            text-decoration: none;
+        }
 
         p {
             color: #081421;
             font-size: 70px;
+            padding: 0px 10px 0px 10px;
             font-family: 'Pacifico', cursive;
         }
     }
 
     .quote {
-        color:yellow;
+        color: yellow;
         font-size: 24px;
         font-family: 'Pacifico', cursive;
         margin: auto auto auto 20px;
