@@ -10,7 +10,7 @@ layout: default
         {% for tag in page.tags %}
         {% capture tag_name %}{{ tag }}{% endcapture %}
         <div class="small-tag">
-            <a class="small-tag-link" href="/tag/{{ tag_name }}">
+            <a class="small-tag-link" href="{{ site.baseurl }}/tag/{{ tag_name }}">
                 {{ tag_name }}
             </a>
         </div>
