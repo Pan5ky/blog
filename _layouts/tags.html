@@ -9,7 +9,7 @@ layout: default
             <p class="tag-post-date">{{ post.date | date: '%B %d, %Y' }} <i>by</i> {{ post.author }}</p>
             
             <h2 class="tag-post-title">
-                <a class="tag-post-link" href="{{ post.url }}">{{ post.title }}</a>
+                <a class="tag-post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             </h2>
 
             <p class="tag-post-description">{{ post.description }}</p>
