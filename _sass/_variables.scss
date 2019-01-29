@@ -1,7 +1,10 @@
-$base-font-family: Helvetica, Arial, sans-serif;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family: 'Dosis', Arial, sans-serif;
+$brand-font-family: 'Pacifico', cursive;
 
 $text-color:       #ffffff;
 $background-color: #081421;
 $brand-color:      yellow;
+
+$mediaMaxWidth: 1260px;
+$mediaBp1Width: 960px;
+$mediaMinWidth: 480px;
