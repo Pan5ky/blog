@@ -32,10 +32,15 @@
             text-decoration: none;
 
             p{
+                display: none;
                 font-family: $brand-font-family;
                 font-size: 36px;
                 padding: 0px 10px;
                 color: $background-color;
+
+                @include media($mediaMinWidth){
+                    display: initial;
+                }
             }
         }
 
