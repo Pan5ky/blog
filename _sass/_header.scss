@@ -39,4 +39,8 @@
         @include media($mediaMinWidth){
             display: none;
         }
+
+        @include media(810px){
+            font-size: 2vw;
+        }
     }
