@@ -7,6 +7,10 @@
         height: fit-content;
         border-radius: 5px;
 
+        @include media($mediaMinWidth){
+            display: none;
+        } 
+
         a {
             text-decoration: none;
         }
@@ -17,7 +21,9 @@
             padding: 0px 10px 0px 10px;
             font-family: 'Pacifico', cursive;
 
-            
+            @include media($mediaMinWidth){
+                font-size: 40px;
+            }
         }
     }
 

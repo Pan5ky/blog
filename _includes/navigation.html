@@ -1,4 +1,17 @@
-<nav class="navigation-container">
+<ul class="navigation-container">
+
+    <li class="logo-mobile">
+        <a href="{{ site.url}}{{ site.baseurl }}/index.html">
+            <p>Em</p>
+        </a>
+    </li>
+
+    <li class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </li>
+    
     <ul class="navigation">
         {% for item in site.data.navigation %}
         <li class="navigation-item">
@@ -8,4 +21,4 @@
         </li>
         {% endfor %}
     </ul>
-</nav>
+</ul>

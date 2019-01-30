@@ -1,10 +1,58 @@
 .navigation-container{
     grid-row: 2;
     grid-column: 1;
+    
+    .hamburger{
+        display: none;     
+        position: relative;
+        top: -45px;
+        right: 10px;
+        float: right;
+
+        .line{
+         width: 35px;
+         height: 4px;
+         background: yellow;
+         margin-bottom: 5px;   
+        }
+    
+        @include media($mediaMinWidth){
+            display: unset;
+        }
+    }
+
+    .logo-mobile{
+        background-color: yellow;
+        border-radius: 5px;
+        display: none;
+        width: fit-content;
+        height: fit-content;
+
+        a{
+            text-decoration: none;
+
+            p{
+                font-family: $brand-font-family;
+                font-size: 36px;
+                padding: 0px 10px;
+                color: $background-color;
+            }
+        }
+
+        @include media($mediaMinWidth){
+            display: block;
+        }
+
+    }
     .navigation{
         list-style-type: none;
         height: 62px;
         justify-content: center;
+
+        @include media($mediaMinWidth){
+            display: none;
+        }
+
         .navigation-item{
             font-size: 26px;
             margin: 10px;
