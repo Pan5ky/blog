@@ -1,24 +1,27 @@
-<ul class="navigation-container">
+<div class="navigation-container">
 
-    <li class="logo-mobile">
+    <div class="logo-mobile">
         <a href="{{ site.url}}{{ site.baseurl }}/index.html">
             <p>Em</p>
         </a>
-    </li>
+    </div>
 
-    <li class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </li>
     
-    <ul class="navigation">
+    <input type="checkbox" id="toggle">
+
+    <label for="toggle" class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </label>
+    
+    <div class="navigation">
         {% for item in site.data.navigation %}
-        <li class="navigation-item">
+        <div class="navigation-item">
             <a href="{{ site.baseurl }}{{ item.link }}">
                 {{ item.name }}
             </a>
-        </li>
+        </div>
         {% endfor %}
-    </ul>
-</ul>
+    </div>
+</div>

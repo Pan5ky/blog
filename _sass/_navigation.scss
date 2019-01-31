@@ -15,11 +15,21 @@
          background: yellow;
          margin-bottom: 5px;   
         }
+
+        .toggle{
+            display: none;
+        }
+        
+        .toggle[type=checkbox]:checked ~ .navigation {
+            right: 0px;
+        }
     
         @include media($mediaMinWidth){
             display: unset;
         }
     }
+
+    
 
     .logo-mobile{
         background-color: yellow;
@@ -49,24 +59,50 @@
         }
 
     }
+
+    input[type=checkbox]{
+        display: none;
+
+        &:checked ~ .navigation {
+            background-color: green;
+            display: initial;
+        }
+    }
+
+
     .navigation{
-        list-style-type: none;
-        height: 62px;
-        justify-content: center;
 
         @include media($mediaMinWidth){
             display: none;
+            transition: all .3s ease;
+            -webkit-transform: all .3s ease;
         }
 
         .navigation-item{
-            font-size: 26px;
+            font-size: 26px;            
             margin: 10px;
+
+            @include media($mediaMinWidth){
+                border: 1px solid yellow;
+                background-color: $brand-color;
+                border-radius: 5px;
+                margin: 5px;
+                
+            }
+
             a{
                 font-family: 'Dosis', sans-serif;
                 text-decoration: none;
                 text-align: right;
                 display: block;
                 color: white;
+
+                @include media($mediaMinWidth){
+                    text-align: center;
+                    display: inline-block;
+                    color: $background-color;
+                    font-weight: 700;
+                }
             }
         }
     }
