@@ -102,4 +102,8 @@
         font-family: 'Bitter', serif;
         font-size: 20px;
     }
+
+    @include media($mediaMinWidth){
+        margin: 20px;
+    }
 }
