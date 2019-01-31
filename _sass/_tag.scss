@@ -81,7 +81,7 @@
     grid-column: 2;
     grid-row: 2;
     margin: 0px 20px;
-    max-width: 600px;
+    max-width: 1100px;
 
     .categories-title {
         color: white;
@@ -93,7 +93,7 @@
     .categories {
         display: flex;
         flex-wrap: wrap;
-
+        max-width: 600px;
 
 
         .category {
