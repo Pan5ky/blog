@@ -5,8 +5,8 @@
     .hamburger{
         display: none;     
         position: relative;
-        top: -45px;
-        right: 10px;
+        top: -35px;
+        right: 15px;
         float: right;
 
         .line{
@@ -44,7 +44,7 @@
             p{
                 display: none;
                 font-family: $brand-font-family;
-                font-size: 36px;
+                font-size: 28px;
                 padding: 0px 10px;
                 color: $background-color;
 
