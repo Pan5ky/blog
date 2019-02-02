@@ -1,0 +1,12 @@
+- name: LinkedIn
+  link: https://linkedin.com/in/eugen-meissner
+  icon: linkedin.svg
+- name: Github
+  link: https://github.com/Pan5ky
+  icon: github.svg
+- name: Stack Overflow
+  link: https://stackoverflow.com/users/9668641/e-m
+  icon: stackoverflow.svg
+- name: Email
+  link: /mai.html
+  icon: gmail.svg
