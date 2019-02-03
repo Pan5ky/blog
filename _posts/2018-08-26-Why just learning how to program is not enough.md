@@ -14,63 +14,35 @@ hen's egg (5–8 cm (2.0–3.1 in) in length and 4.5–5.5 cm (1.8–2.2 in) in
 diameter). It has a fibrous, dull greenish-brown skin and bright green or
 golden flesh with rows of tiny, black, edible seeds. The fruit has a soft
 texture, with a sweet and unique flavor.
+```c#
+var x = new DateTime();
+private static void Main()
+{
+    var intArray = new int[] { 10, 20 };
+    One(intArray);
+    Console.WriteLine(string.Join(", ", intArray));
 
-Dies ist ein normaler Absatz.
+    intArray = new int[] { 10, 20 };
+    Two(intArray);
+    Console.WriteLine(string.Join(", ", intArray));
 
-<table>
-    <tr>
-        <td>Foo</td>
-    </tr>
-</table>
+    intArray = new int[] { 10, 20 };
+    Three(ref intArray);
+    Console.WriteLine(string.Join(", ", intArray));
+}
 
-Dies ist noch ein normaler Absatz.
+private static void One(int[] intArray)
+{
+    intArray[0] = 30;
+}
 
-Dies ist ein H1
-===============
+private static void Two(int[] intArray)
+{
+    intArray = new int[] { 40, 50 };
+}
 
-Dies ist ein H2
----------------
-
-# Dies ist ein H1
-
-## Dies ist ein H2
-
-###### Dies ist ein H6
-
-
-
-# Dies ist ein H1 #
-
-## Dies ist ein H2 ##
-
-### Dies ist ein H3 ######
-
-
-
-> ## Dies ist eine Überschrift.
-> 
-> 1.   Dies ist der erste Listenpunkt.
-> 2.   Dies ist der zweite Listenpunkt.
-> 
-> Hier ist ein wenig Beispiel-Code:
-> 
->     return shell_exec("echo $input | $Markdown_script");
-
-
-
-
-\*Von Sternchen umgeben\*
-
-
-\   Backslash
-`   Backtick
-*   Sternchen
-_   Unterstrich
-{}  Geschweifte Klammern
-[]  Eckige Klammern
-()  Runde Klammern
-#   Raute
-+   Plus-Zeichen
--   Minus-Zeichen (Bindestrich)
-.   Punkt
-!   Ausrufezeichen
+private static void Three(ref int[] intArray)
+{
+    intArray = new int[] { 60, 70 };
+}
+```
