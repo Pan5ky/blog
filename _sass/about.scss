@@ -1,5 +1,85 @@
 .about-container {
-    grid-column: 2;
-    grid-row: 2;
+    font-family: $base-font-family;
     color: white;
+    .landing-image {
+        background-image:  url("../images/laptop.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .landing-div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            
+            .about-title-container{
+                display: flex;
+                
+                .about-title {
+                    text-align: center;
+                    letter-spacing: 20px;
+                    font-size: 3rem;
+                }
+                .initial {
+                    color: $background-color;
+                    background-color: $brand-color;
+                    padding: 0px 0px 0px 18px;
+                    border-radius: 10px;
+                }
+            }
+            
+    
+            .about-description {
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: lighter;
+            }
+        }
+    }
+    .work-div {
+        max-width: $mediaMaxWidth;
+        margin: 0px auto;
+        border-bottom: 2px solid $brand-color;
+    }
+
+    .subtitle {
+        letter-spacing: 20px;
+        font-size: 2.5rem;
+        margin: 50px 0px;
+    }
+
+    .subtext{
+        font-size: 1.2rem;
+        font-weight: lighter;
+        margin: 10px 0px;
+    }
+
+    .goals-div{
+        max-width: $mediaMaxWidth;
+        margin: 0px auto;
+        border-bottom: 2px solid $brand-color;
+
+        .goals{
+            font-size:1.5rem;
+        }
+        .goal-list{
+            margin: 0px 50px 10px;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        font-family: $base-font-family;
+        font-size: 2rem;
+        justify-content: center;
+        .navigation-item{
+            margin: 20px;
+            .navigation-link{
+                text-decoration: none;
+                color: white;
+
+            }
+        }
+    }
 }

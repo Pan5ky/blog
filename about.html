@@ -1,8 +1,56 @@
 ---
-layout: default
 title: About
+layout: blank
 ---
 
 <div class="about-container">
-    <h1>About me</h1>
+    <div class="landing-image">
+        <div class="landing-div">
+            <div class="about-title-container">
+                <h1 class="initial about-title">E</h1>
+                <h1 class="about-title">UGEN</h1>
+                <h1 class="initial about-title">M</h1>
+                <h1 class="about-title">EISSNER</h1>
+            </div>
+            <h3 class="about-description">Teaching myself software engineering through development</h3>
+        </div>
+    </div>
+    <div class="work-div">
+        <h1 class="subtitle">ABOUT ME</h1>
+        <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt veniam earum distinctio
+            consequuntur eligendi consectetur consequatur ad minus doloribus repellat et dolores, nisi numquam quos
+            expedita saepe totam placeat ducimus modi tempore ipsum dicta eaque. Dolores nemo reprehenderit deserunt
+            corporis assumenda dignissimos beatae quod veniam suscipit, repellendus eos, error sit aliquid quisquam, ab
+            quos laborum est fugit pariatur. Quod at exercitationem numquam animi aspernatur, maxime voluptates
+            similique, repellendus totam accusamus et a ex vel enim nostrum, debitis magni architecto! Quae totam quam
+            aperiam dignissimos et soluta repellendus perferendis, alias veniam veritatis molestias architecto
+            inventore eum perspiciatis amet. Inventore, facere minima.</p>
+    </div>
+
+    <div class="goals-div">
+        <h1 class="subtitle">GOALS</h1>
+        <p class="goals">
+            Learn in 2019
+        </p>
+        <ul class="goal-list subtext">
+            <li>Scalable software architecture (microservices,virtualization,networking)</li>
+            <li>Build a single page application for note taking using React.js</li>
+            <li>Software security</li>
+            <li>Learn video production and document the process on Youtube</li>
+            <li>Photography</li>
+            <li>Get better at Writing</li>
+        </ul>
+    </div>
+    <div class="navigation">
+        {% for item in site.data.navigation %}
+        <div class="navigation-item">
+            <a class="navigation-link" href="{{ site.baseurl }}{{ item.link }}">
+                {{ item.name }}
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
+
+    {% include footer.html %}
 </div>
