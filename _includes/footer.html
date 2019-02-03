@@ -1,17 +1,12 @@
 <div class="footer">
-    <div class="footer-description">
-        <h2> Em - Software Dev</h2>
-
-        <p>
-            Em brings you my thoughts on various topics in the 
-            world of software development and other 
-            topics that interest me.
-        </p>
-
-        <p> 
-            Curated and founded by Eugen Meissner
-             - software dev based in Germany. 
-             For work inquiries, contact me here.
-        </p>
+    <h1 class="social-button-title">follow the journey</h1>
+    <div class="social-button-container">
+        {% for item in site.data.social %}
+        <div class="social-button">
+            <a class="social-button-link" href="{{ item.link }}">
+                <img class="social-button-icon" src="../assets/images/social/{{ item.icon }}" alt="">
+            </a>
+        </div>
+        {% endfor %}
     </div>
 </div>
