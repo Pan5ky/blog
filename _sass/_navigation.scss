@@ -90,13 +90,12 @@
                 
             }
 
-            a{
+            .navigation-link{
                 font-family: 'Dosis', sans-serif;
                 text-decoration: none;
                 text-align: right;
-                display: block;
                 color: white;
-
+                display: block;
                 @include media($mediaMinWidth){
                     text-align: center;
                     display: inline-block;

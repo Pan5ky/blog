@@ -24,17 +24,16 @@
 .post-container {
     grid-column: 2;
     grid-row: 2;
-    width: fit-content;
+    width: 80vw;
     flex-flow: row wrap;
     display: flex;
     list-style: none;
     flex-direction: row;
-    max-width: 1100px;
 
     .post {
         margin: 20px;
         min-width: 250px;
-        max-width: 40%;
+        width: 25vw;
         font-family: 'Dosis', sans-serif;
 
         .date-author {
@@ -70,6 +69,7 @@
 
         @include media($mediaBp1Width){
             max-width: 500px;
+            width: unset;
         }
     }
 }
@@ -106,6 +106,12 @@
     @include media($mediaMinWidth){
         margin: 20px;
     }
+}
+
+.aside-container{
+    grid-row: 2;
+    grid-column: 3;
+    background-color: crimson;
 }
 
 pre{
