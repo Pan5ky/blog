@@ -3,13 +3,13 @@
     color: white;
     .landing-image {
         background-image:  url("../images/laptop.jpg");
-        height: 60vh;
+        height: 70vh;
         background-size: cover;
         background-repeat: no-repeat;
 
         .landing-div {
             position: absolute;
-            top: 30%;
+            top: 35%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
             
