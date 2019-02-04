@@ -3,13 +3,13 @@
     color: white;
     .landing-image {
         background-image:  url("../images/laptop.jpg");
-        height: 100vh;
+        height: 60vh;
         background-size: cover;
         background-repeat: no-repeat;
 
         .landing-div {
             position: absolute;
-            top: 50%;
+            top: 30%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
             
@@ -37,7 +37,7 @@
             }
         }
     }
-    .work-div {
+    .about-me-div {
         max-width: $mediaMaxWidth;
         margin: 0px auto;
         border-bottom: 2px solid $brand-color;
