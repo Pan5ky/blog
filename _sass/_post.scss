@@ -113,11 +113,35 @@
     grid-column: 3;
     justify-self: left;
     margin-left: 50px;
-    font-family: $brand-font-family;
+    color: $text-color;
+    
+    .aside-title{
+        font-family: $base-font-family;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    .related-tags{
+        background-color: $brand-color;
+        display: inline-block;
+        border-radius: 5px;
+        margin: 2px 2px;
+        padding: 0px 5px;
+        .related-tag-title{
+            color: $background-color;
+        }
+    }
 
     .related-posts{
-        color: $text-color;
         font-family: $base-font-family;
+
+        .related-post{
+            .related-post-link{
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+        
     }
 }
 

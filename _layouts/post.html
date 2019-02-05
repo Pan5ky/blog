@@ -26,7 +26,7 @@ layout: default
 <aside class="aside-container">
     <div class="related-posts">
 
-        <h4>You May Also Enjoy</h4> 
+        <h4 class="aside-title">You May Also Enjoy</h4> 
         
         {% assign maxRelated = 4 %}
         {% assign minCommonTags =  2 %}
@@ -48,8 +48,15 @@ layout: default
             {% endfor %}
         
             {% if sameTagCount >= minCommonTags %}
-              <div>
-              <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></h5>
+              <div class="related-posts">
+                <h5 class="related-post"><a class="related-post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
+                <div class="related-tags">
+                  {% assign tags = commonTags | split: ' ' | as_object %}
+                  {% for tag in tags %}
+                  <div class="related-tag"><p class="related-tag-title">{{ tag }}</p></div>
+                  {% endfor %}
+                  
+                </div>
               </div>
               {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
               {% if maxRelatedCounter >= maxRelated %}
