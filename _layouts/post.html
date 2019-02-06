@@ -49,13 +49,9 @@ layout: default
         
             {% if sameTagCount >= minCommonTags %}
               <div class="related-posts">
-                <h5 class="related-post"><a class="related-post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
-                <div class="related-tags">
-                  {% assign tags = commonTags | split: ' ' | as_object %}
-                  {% for tag in tags %}
-                  <div class="related-tag"><p class="related-tag-title">{{ tag }}</p></div>
-                  {% endfor %}
-                  
+                <div class="related-post">
+                  <h5 class="related-post-title"><a class="related-post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
+                  <p class="related-post-description">{{ post.description }}</p>   
                 </div>
               </div>
               {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
