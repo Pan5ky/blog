@@ -1,0 +1,43 @@
+.email-form {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px 20px;
+
+    .title{
+        color: $text-color;
+        font-family: $base-font-family;
+    }
+    
+
+    /* webkit solution */
+    ::-webkit-input-placeholder {
+        text-align: left;
+    }
+
+    /* mozilla solution */
+    input:-moz-placeholder {
+        text-align: top;
+    }
+
+    .contact-message {
+        width: 600px;
+        height: 200px;
+    }
+
+    .contact-submit {
+        background-color: $brand-color;
+        color: $background-color;
+        border-radius: 10px;
+    }
+}
+
+.input-field {
+    font-size: 18px;
+    height: 50px;
+    width: 600px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
