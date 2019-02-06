@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     margin: 10px 20px;
+    max-width: 600px;
 
     .title{
         color: $text-color;
@@ -23,8 +24,11 @@
     }
 
     .contact-message {
-        width: 600px;
         height: 200px;
+    }
+
+    .contact-email {
+        height: 1fr;
     }
 
     .contact-submit {
@@ -37,7 +41,7 @@
 .input-field {
     font-size: 18px;
     height: 50px;
-    width: 600px;
     margin: 10px 0px;
+    width: 100%;
     border-radius: 10px;
 }

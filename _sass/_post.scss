@@ -166,6 +166,10 @@
                     border-bottom: 2px solid $brand-color;
 
                 }
+
+                @include media($mediaMinWidth){
+                    text-align: center;
+                }
             }
 
             .related-post-description {
@@ -183,16 +187,17 @@
                 margin: unset;
             }
         }
-
+        @include media(1030px){
+            display: none;
+        }
+    
+        @include media($mediaMinWidth){
+            margin: 5px;
+            display: initial;
+        }
         
     }
-    @include media($mediaMinWidth){
-        margin: 5px;
-    }
-
-    @include media($mediaMaxWidth){
-        display: none;
-    }
+    
 }
 
 pre {
