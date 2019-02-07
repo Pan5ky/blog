@@ -12,7 +12,7 @@
         .line{
          width: 35px;
          height: 4px;
-         background: yellow;
+         background: $brand-color;;
          margin-bottom: 5px;   
         }
 
@@ -32,7 +32,7 @@
     
 
     .logo-mobile{
-        background-color: yellow;
+        background-color: $brand-color;
         border-radius: 5px;
         display: none;
         height: fit-content;
@@ -64,7 +64,6 @@
         display: none;
 
         &:checked ~ .navigation {
-            background-color: green;
             display: initial;
         }
     }
@@ -83,7 +82,7 @@
             margin: 10px;
 
             @include media($mediaMinWidth){
-                border: 1px solid yellow;
+                border: 1px solid $brand-color;
                 background-color: $brand-color;
                 border-radius: 5px;
                 margin: 5px;
@@ -91,10 +90,10 @@
             }
 
             .navigation-link{
-                font-family: 'Dosis', sans-serif;
+                font-family: $base-font-family;
                 text-decoration: none;
                 text-align: right;
-                color: white;
+                color: $text-color;
                 display: block;
                 @include media($mediaMinWidth){
                     text-align: center;

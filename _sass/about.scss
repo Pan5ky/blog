@@ -1,6 +1,6 @@
 .about-container {
     font-family: $base-font-family;
-    color: white;
+    color: $text-color;
     .landing-image {
         background-image:  url("../images/laptop.jpg");
         height: 70vh;
@@ -106,7 +106,7 @@
             margin: 20px;
             .navigation-link{
                 text-decoration: none;
-                color: white;
+                color: $text-color;
 
             }
         }

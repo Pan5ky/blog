@@ -2,7 +2,7 @@
         margin: 0 0 0 auto;
         grid-column: 1;
         grid-row: 1;
-        background-color: yellow;
+        background-color: $brand-color;
         width: fit-content;
         height: fit-content;
         border-radius: 5px;
@@ -19,7 +19,7 @@
             color: #081421;
             font-size: 70px;
             padding: 0px 10px 0px 10px;
-            font-family: 'Pacifico', cursive;
+            font-family: $brand-font-family;
 
             @include media($mediaMinWidth){
                 font-size: 40px;
@@ -28,7 +28,7 @@
     }
 
     .quote {
-        color: yellow;
+        color: $brand-color;
         font-size: 24px;
         font-family: $brand-font-family;
         margin: auto auto auto 20px;
