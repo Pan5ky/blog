@@ -35,7 +35,7 @@ layout: default
       {% assign maxRelated = 4 %}
       {% assign minCommonTags =  2 %}
       {% assign maxRelatedCounter = 0 %}
-      {% assign isTitleDisplayed = true %} 
+      {% assign displayTitle = true %} 
 
       
         {% for post in site.posts %}
@@ -54,9 +54,9 @@ layout: default
           {% endfor %}
       
           {% if sameTagCount >= minCommonTags %}
-            {% if isTitleDisplayed %}
+            {% if displayTitle %}
               <h4 class="aside-title">You May Also Enjoy</h4> 
-              {% assign isTitleDisplayed = false %}
+              {% assign displayTitle = false %}
             {% endif%}
             <div class="related-posts">
               <div class="related-post">
