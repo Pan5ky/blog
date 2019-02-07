@@ -4,7 +4,7 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 20% 2fr auto;
+    grid-template-columns: 20% 2fr 1fr;
     
     @include media($mediaMinWidth){
         display: block;
