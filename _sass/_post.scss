@@ -110,12 +110,22 @@
         }
     }
 
-    .full-post-date-author {
-        font-family: 'Bitter', serif;
-        margin-bottom: 10px;
-        color: gray;
-    }
+    .post-meta{
+        display: flex;
+        justify-content: space-between;
+        .full-post-date-author {
+            font-family: 'Bitter', serif;
+            margin-bottom: 10px;
+            color: $sec-text-color;
+        }
 
+        .reading-time{
+            font-family: 'Bitter', serif;
+            color: $sec-text-color;
+        }
+    
+    }
+    
     .full-post-text {
         line-height: 1.5;
         font-weight: 100;

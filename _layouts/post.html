@@ -4,7 +4,13 @@ layout: default
 
 
 <article class="full-post">
-    <p class="full-post-date-author">{{ page.date | date_to_string }} <i>by</i> {{ page.author }}</p>
+    <div class="post-meta">
+        <p class="full-post-date-author">{{ page.date | date_to_string }} <i>by</i> {{ page.author }}</p>
+        <p class="reading-time">
+          <span class="fas fa-clock"></span>
+          {% include read_time.html %}
+        </p>
+    </div>
     <h1 class="full-post-title">{{ page.title }}</h1>
     <div class="small-tag-container">
         {% for tag in page.tags %}
