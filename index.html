@@ -9,7 +9,10 @@ title: Eugen Meissner - Blog
     {% for post in site.posts limit:4 %}
     <li class="post">
       <p class="date-author">{{ post.date | date: '%B %d, %Y' }} <i>by</i> {{ post.author }}</p>
-
+      
+      <p class="reading-time">
+        {% include read_time_index.html %}
+      </p>
 
       <h2 class="post-title">
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>

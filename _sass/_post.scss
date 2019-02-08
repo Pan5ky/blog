@@ -39,7 +39,14 @@
         font-family: $base-font-family;
 
         .date-author {
-            color: gray;
+            color: $sec-text-color;
+        }
+
+        .reading-time{
+            color: $sec-text-color;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: lighter;
         }
 
         .post-title {
@@ -159,18 +166,7 @@
         font-size: 1.5rem;
         font-weight: lighter;
         margin-bottom: 10px;
-    }
-
-    .related-tags {
-        background-color: $brand-color;
-        display: inline-block;
-        border-radius: 5px;
-        margin: 2px 2px;
-        padding: 0px 5px;
-
-        .related-tag-title {
-            color: $background-color;
-        }
+        margin-left: 10px;
     }
 
     .related-posts {

@@ -18,6 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+words_per_minute: 200
 highlighter: rouge
 title: Eugen Meissner 
 email: eugen.meissner@live.de
