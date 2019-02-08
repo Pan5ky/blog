@@ -45,7 +45,6 @@
         .reading-time{
             color: $sec-text-color;
             font-size: 14px;
-            text-transform: uppercase;
             font-weight: lighter;
         }
 
@@ -93,7 +92,7 @@
     grid-column: 2;
     grid-row: 2;
     margin: 0px auto;
-    width: 100%;
+    width: 1fr;
     max-width: 800px;
     color: $text-color;
 
@@ -143,7 +142,6 @@
     grid-column: 3;
     color: $text-color;
     font-family: $base-font-family;
-    width: fit-content;
     margin: 0px 20px;
 
     .contact-action {
@@ -169,6 +167,10 @@
                 border-bottom: 2px solid $brand-color;
             }
         }
+
+        @include media($mediaMaxWidth) {
+            display: none;
+        }
     }
 
     .aside-title {
@@ -183,7 +185,7 @@
         font-family: $base-font-family;
 
         .related-post {
-            max-width: 350px;
+            max-width: 100%;
             margin: 5px;
             background-color: lighten($color: $background-color, $amount: 5);
             padding: 1px;
