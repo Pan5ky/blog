@@ -31,7 +31,7 @@ github_username:  pan5ky
 disqus:
     # Leave shortname blank to disable comments site-wide.
     # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-    shortname: pan5ky-github-io
+    shortname: eugenmeissner-com
 
 plugins:
   - jekyll-seo-tag
